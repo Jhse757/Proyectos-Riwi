@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1{
+    color:#edfcff;
+    font-size: 50px;
+}
+
+body{
+    background-color: #0e385d;
+    margin-bottom: 5%;
+}  
+
+.style-contenedor-card{
+    display: flex;
+    justify-content: center; 
+    justify-items: center; 
+    gap: 10px; 
+    flex-wrap:wrap;
+} 
+
+.style-card{
+    width: 375px;
+    height: 490px;
+    background-color: #0d5e9b;
+    border: 2px solid #83eaff;
+    color: #edfcff;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+
+.style-card:hover{
+    background-color: #83eaff;
+    color: #0d5e9b;
+    font-size: 30px;
+}
+
+.style-slide{
+    width: 100%;
+    height: 375px;
+    background-color: #1ec0ff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.style-seccion{
+    width: 100%;
+    height: auto;
+    background-color: #0e385d;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tex-center{
+    text-align: center;
+}
