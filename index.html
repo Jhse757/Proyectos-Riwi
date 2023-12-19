@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<body>
+    <section>
+        <div class="container-md">
+            <div class="row">
+                <div class="col">
+                    <h1 class="h1Long text-center">Mi Portafolio</h1>
+                    <p class="pLong text-center">Johan Sebastian Arboleda</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 mx-auto">
+                    <div class="imgContainer mx-auto" onclick="selectedImg(this), seleccionaClase()" data-selected="false">
+                        <img src="https://imgdb.net/storage/uploads/decbffe50e352918d4c65fa16869f7348db1504532fe9f8e4237a1d9676dbab8.jpg" alt="Encantamientos">
+                    </div>
+                    <p class="desc">Hoja de vida</p> 
+                </div>
+                
+                <div class="col-md-3 mx-auto">
+                    <div class="imgContainer mx-auto" onclick="selectedImg(this), seleccionaClase()">
+                        <img src="https://imgdb.net/storage/uploads/8f504d91c7610a107074133552860123af831121c8095f8321c3492b664d74a6.jpg" alt="Pociones">
+                    </div>
+                    <p class="desc">Programa KFC</p>
+                </div>
+                
+                <div class="col-md-3 mx-auto">
+                    <div class="imgContainer mx-auto" onclick="selectedImg(this)">
+                        <img src="https://imgdb.net/storage/uploads/db86674ccedce7b2db21edf7bf507ed1cd4ae3ee38c11e0aac593535363eb44a.jpg" alt="Herbología">
+                    </div>
+                    <p class="desc">Programa Ahorcado</p>
+                </div>
+                
+                <div class="col-md-3 mx-auto">
+                    <div class="imgContainer mx-auto" onclick="selectedImg(this)" >
+                        <img src="https://imgdb.net/storage/uploads/1a6e9bc69d86febc1e0fabc39c6f819c35fd56932009b59924d0c8ad5ec6217f.jpg" alt="Historia De Magia">
+                    </div>
+                    <p class="desc">Programa Hogwarts</p>
+                </div>                
+            </div>
+        </div>
+    </section>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section>
+
+        <!-- _________________________________ -->
+
+
+
+        <div class="container">
+            <div class="displayNone" id="materis">
+                <h1 class="h1Long text-center">Clases de magia</h1>
+                <p class="pLong text-center">Elige tus clases de magia</p>
+                <div class="row justify-content-center align-items-start">
+
+                    <div class="col my-3 d-flex flex-column align-items-start justify-content-center" id="encantamientos">
+                        <div class="imgContainer" >
+                            <img class="img"  src="https://imgdb.net/storage/uploads/decbffe50e352918d4c65fa16869f7348db1504532fe9f8e4237a1d9676dbab8.jpg" onclick="seleccionClase()" alt="Encantamientos">
+                        </div>
+                        <p class="desc">Encantamientos</p>
+                    </div>
+
+                    <div class="col my-3 d-flex flex-column align-items-start justify-content-center" id="defensaArtesOscuras">
+                        <div class="imgContainer">
+                            <img src="https://imgdb.net/storage/uploads/c7130b35370f4b2daaa20759494d64227ab2f0f372d7f5ec7c2e467a8d662d75.jpg" alt="Defensa artes oscuras">
+                        </div>
+                        <p class="desc">Defensa artes oscuras</p>
+                    </div>
+
+                    <div class="col my-3 d-flex flex-column align-items-start justify-content-center" id="herbología">
+                        <div class="imgContainer">
+                            <img src="https://imgdb.net/storage/uploads/db86674ccedce7b2db21edf7bf507ed1cd4ae3ee38c11e0aac593535363eb44a.jpg" alt="Herbología">
+                        </div>
+                        <div>
+                            <p class="desc">Herbología</p>
+                        </div>
+                    </div>
+
+                    <div class="col my-3 d-flex flex-column align-items-start justify-content-center" id="historiaDeMagia">
+                        <div class="imgContainer">
+                            <img src="https://imgdb.net/storage/uploads/1a6e9bc69d86febc1e0fabc39c6f819c35fd56932009b59924d0c8ad5ec6217f.jpg" alt="Historia De Magia">
+                        </div>
+                        <p class="desc">Historia De Magia</p>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-between align-items-start">
+
+                        <div class="col my-3 text-center" id="animalesMagicos">
+                            <div class="imgContainer">
+                                <img src="https://imgdb.net/storage/uploads/f9ec550187361485162afe845dc3f3f76cf35809333d81277da877c399610ae4.jpg" alt="Animales Magicos">
+                            </div>
+                            <p class="desc text-center">Animales Magicos</p>
+                        </div>
+
+                    <div class="col my-3 d-flex flex-column align-items-start justify-content-center" id="animalesMagicos">
+                        <div class="imgContainer">
+                            <img src="https://imgdb.net/storage/uploads/f9ec550187361485162afe845dc3f3f76cf35809333d81277da877c399610ae4.jpg" alt="Animales Magicos">
+                        </div>
+                        <p class="desc">Animales Magicos</p>
+                    </div>
+
+                    <div class="col my-3 d-flex flex-column align-items-start justify-content-center" id="pociones">
+                        <div class="imgContainer">
+                            <img src="https://imgdb.net/storage/uploads/8f504d91c7610a107074133552860123af831121c8095f8321c3492b664d74a6.jpg" alt="Pociones">
+                        </div>
+                        <p class="desc">Pociones</p>
+                    </div>
+
+                    <div class="col my-3 d-flex flex-column align-items-start justify-content-center" id="transformaciones">
+                        <div class="imgContainer">
+                            <img src="https://imgdb.net/storage/uploads/34c605e7ba455c008f43687fee77f9f1142004184c0858b3f280d4d14b89b3f0.jpg" alt="Transformaciones">
+                        </div>
+                        <p class="desc">Transformaciones</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div id="app" class="custom-form displayNone"> <!-- Recipiente -->
+</div>
+
+
+    <!-- formulario de registro estudiante -->
+
+</body>
+<script src="./app.js"></script>
+</html>
