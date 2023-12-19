@@ -1,0 +1,57 @@
+.btn-primary{
+background-color: red;
+border: 1px solid red;
+width: 100%;
+transition: ease 0.3s;
+}
+.btn-primary:hover{
+    background-color: rgb(226, 0, 0);
+    border: 1px solid red;
+    width: 100%;
+    scale: 1.04;
+    transition: ease 0.3s;
+    }
+
+.theme-light{
+background-color: white;
+color: #212529;
+}
+
+.theme-dark{
+background-color: #212529;
+color: #ffffff;
+}
+
+.card {
+    background-color: #FAFAFA;
+    border-color: #DEE2E6;
+}
+.theme-dark .card{
+    background-color: #1B1F22;
+    border-color: #495057;
+}
+
+.theme-dark .form-select{
+    background-color: #1B1F22;
+    border-color: #495057;
+    color: #ffffff;
+}
+
+.form-select{
+    background-color:#FAFAFA;
+    color: #1B1F22;
+    border-color: #DEE2E6;
+}
+
+.theme-dark .form-select:focus {
+    color: #ffffff;
+    background-color: #1B1F22;
+    border-color: red;
+    box-shadow: 0 0 0 0.25rem rgba(255, 0, 0, 0.205)
+}
+
+.card:hover{
+    scale: 1.04;
+    transition: ease 0.3s;
+}
+
