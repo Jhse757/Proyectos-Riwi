@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <div class="card">
+                    <div class="card-body">
+                    
+                            <div class="form-group mt-3">
+                                <label id="select" for="">Operacion</label>
+                                <select name="" id="operacion" class="form-select">
+                                    <option value="" selected disabled>Seleccionar...</option>
+                                    <option value="+">Suma</option>
+                                    <option value="-">Resta</option>
+                                    <option value="*">Multiplicacion</option>
+                                    <option value="/">Division</option>
+                                    <option value="**">Elevado</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group mt-3">
+                                <label for="">Numero 1</label>
+                                <input id="dato1" type="text" class="form-control is-success">
+                                <span class="invalid-feedback">Completa este campo</span>
+                            </div>
+                            <div class="form-group mt-3">
+                                <label for="">Numero 2</label>
+                                <input id="dato2" type="text" class="form-control is-success">
+                                <span class="invalid-feedback">Completa este campo</span>
+                            </div>
+                            <button id="botonResultado" type="button" onclick="operaciones()" class="btn btn-primary mt-3 w-100">Operar</button>
+
+                    </div>
+                </div>
+                <div id="success" class="alert alert-success mt-4">
+                    <p id="resultado">
+                    </p> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
