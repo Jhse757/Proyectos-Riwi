@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <main>
+        <div class="containerSaldo">
+            <!--Se muestra saldo total-->
+            <div class="saldo">
+                <h3>Tu saldo total es:</h3>    
+                <h1 id="saldoTotal" >$</h1>
+            </div>
+        </div>
+        <div id="mensaje" class="displayNone">
+            <!--Se muestran mensajes-->
+            <div>
+                <p></p>    
+            </div>
+        </div>
+
+        <div class="container">
+            <!--Caso 1-->
+
+            <!--Paso 1-->
+            <!--Se da la bienvenida-->
+            <div id="bienvenida" class="">
+                <h1>¡Bienvenido Hildebrando!</h1>
+                <p>Soy tu asistente de viaje</p>
+                <button class="buttonYes" onclick="agregarPresupuesto(), paso1()"><b>Continuar</b></button>
+            </div>
+
+            <!--Se agrega el presupuesto-->
+            <div id="paso1" class="displayNone">
+                <label for="">Escribe tu presupuesto</label>
+                <input type="number" class="input" id="inputPresupuesto" placeholder="Ej. 2.500.000">
+                <button class="buttonYes" onclick="agregarPresupuesto(), paso2()">Agregar</button>
+            </div>
+
+            <!--Paso 2-->
+            <!--Se pregunta si desea comer algo antes de viajar--> 
+            <div id="paso2" class="displayNone">
+                <div>
+                    <h1>¿Quieres comer algo antes del vuelo?</h1>
+                    <h2>Elige una de las opciones disponibles</h>
+                </div>
+
+                <!--  Opciones disponibles-->
+                <div class="containerAllArt">
+                    <!--  Articulo 1-->
+                    <div id="art1" class="containerArt">
+                        <div class="containerImg">
+                            <img class="img" src="https://imgdb.net/storage/uploads/4e4160380254ddae5c0607bdb75f6740f683d9f639b551aa4ed65f5dab5ddd86.png" alt="Almojabana">
+                        </div>
+                        <div>
+                            <h2>Almojabana + Gaseosa</h2>
+                            <h2>$15.000</h2>
+                        </div>
+                        <div>
+                            <button id="btnArt1" class="buttonYes" onclick="comprar(1)">Comprar</button>     
+                        </div>
+                    </div>
+                    <!--  Articulo 2-->
+                    <div id="art2" class="containerArt">
+                        <div class="containerImg">
+                            <img class="img" src="https://imgdb.net/storage/uploads/f1720db80cd7b50741a1c644483c6e45b22336ba4bd6445ffc36f750438f087e.png" alt="Subway">
+                        </div>
+                        <div>
+                            <h2>Subway</h2>
+                            <h2>$23.000</h2>
+                        </div>
+                        <div>
+                            <button id="btnArt2" class="buttonYes" onclick="comprar(2)">Comprar</button>     
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <button class="buttonNot" onclick="mejorNo(), paso3() ">Mejor no</button>
+                    </div>
+                    <div>
+                        <button class="buttonYes" onclick="paso3(), tamanoPrendas()">Continuar</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Caso 2-->
+
+            <!--Paso 3-->
+        <!--  Medidas de la maleta-->
+            <div id="paso3" class="displayNone">
+                <div>
+                    <h1>Revisa las medidas de la maleta y evita costos adicionales</h1>
+                </div>
+                <div class="containerAllArt">
+                    <!--Maleta permitida-->
+                    <div class="containerArt">
+                        <div class="containerImg">
+                            <h1>Equipaje permitido</h1>
+                            <div>
+                                <img src="https://imgdb.net/storage/uploads/c9811cd8966267cedb17080b63a4bbbb0c27a771b21e0e75754c007a3546fe4f.png" alt="Maleta permitida">
+                            </div>
+                            <div>
+                                <h2>Alto: 55 cm</h2>
+                                <h1></h1>
+                                <h2>Largo: 40 cm</h2>
+                                <h1></h1>
+                                <h2>Ancho: 20 cm</h2>
+                                <h1></h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Maleta actual-->
+                <div class="containerArt">
+                    <div class="containerImg">
+                        <h1>Equipaje actual</h1>
+                        <div>
+                            <img src="https://imgdb.net/storage/uploads/c9811cd8966267cedb17080b63a4bbbb0c27a771b21e0e75754c007a3546fe4f.png" alt="Maleta permitida">
+                        </div>
+                        <div>
+                            <table class="input">
+                                <tr>
+                                    <th>Prenda</th>
+                                    <th>Cantidad actual</th>
+                                    <th>Tamaño total</th>
+                                </tr>
+                                <tr>
+                                    <td>Camisas 5cm c/u</td>
+                                    <td><input onchange="tamanoPrendas()" id="cantidadCamisa" type="number" class="tabla" value="5"></td>
+                                    <td id="tamanoTotalCamisas"></td>
+                                </tr>
+                                <tr>
+                                    <td>Pantalones 6cm c/u</td>
+                                    <td><input onchange="tamanoPrendas()" id="cantidadPantalones" type="number" class="tabla" value="6"></td>
+                                    <td id="tamanoTotalPantalones"></td>
+                                </tr>
+                                <tr>
+                                    <td>Zapatos 8cm c/u</td>
+                                    <td><input onchange="tamanoPrendas()" id="CantidadZapatos" type="number" class="tabla" value="2"></td>
+                                    <td id="tamanoTotalZapatos"></td>
+                                </tr>
+                            </table>
+                            <p  class="" id="mensajeMedidas"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
