@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>*--Ahorcado--*</title>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div>
+                <img class="img" src="https://riwi.io/wp-content/uploads/2023/07/Fondo-claro-logo-1536x864.png" alt="Logo Riwi">
+            </div>
+                <!--Se muestra palabra secreta-->
+            <div id="containerPalabraSecreta" class="palabraSecreta displayNone">
+                <div>
+                    <h3>Adivina la palabra:</h3>    
+                    <h1 id="palabraSecreta"></h1>
+                    <p id="longitudPalabra"></p>
+                </div>
+            </div>
+            <!--Bienvenida-->
+            <!--Se da la bienvenida-->
+            <div id="bienvenida" class="">
+                <h1>¡Bienvenido a al juego!</h1>
+                <p>Pon a prueba tus habilidades</p> 
+                <button class="buttonYes" onclick="paso1()"><b>Iniciar</b></button>
+            </div>
+            <!--Paso 1-->
+            <!--Se agrega la palabra secreta-->
+            <div id="paso1" class="displayNone">
+                <p>Escribe una palabra secreta</p> 
+                <input type="text" class="input" id="inputPalabraSecreta" placeholder="Ej. Riwi">
+                <button class="buttonYes" onclick="iniciarJuego(); paso2()">Iniciar juego</button>
+            </div>
+
+            <!--Paso 2-->
+                <!--Ingresa y validamos letra a adivinar-->
+          <div id="paso2" class="displayNone">           
+                <div class="containerArt">
+                    <div>
+                        <input type="text" class="input" id="inputPalabraAdivinar" placeholder="Ingresa una letra aca">
+                    </div>
+                    <div>
+                        <button class="buttonYes" onclick="adivinarLetra()">Verificar letra</button>
+                        <button id="btnReiniciar" class="buttonNot displayNone" onclick="reiniciarJuego()">Reiniciar</button>
+                    </div>
+                    <div>
+                        <h2 id="numIntentos" ></h2>
+
+                    </div>            
+                </div>
+            </div>
+        </div>
+     </div>
+     <div>
+        <p>Creado por Daniel Torres & Johan Arboleda - Riwi 3B</p>
+     </div>
+        <!--Se muestran mensajes-->
+        <div id="mensaje" class="displayNone">
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+
+
