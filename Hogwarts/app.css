@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'The Boqke', sans-serif;
+    color: white;
+}
+
+body{
+    background-image: url('https://imgdb.net/storage/uploads/76ff3df702c1c2606b398e92941169d6d779823f93b1831b8450c44844176a4d.jpg'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.displayNone{
+    display: none;
+}
+
+.h1Long{
+    font-size: 6.5rem;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+}
+.pLong{
+    font-size: 2rem;
+    text-shadow: rgb(0, 0, 0) 1px 0 10px; 
+}
+
+.title{
+    height: 500px;
+}
+
+.form{
+    width:500px;
+}
+
+.blur{
+    backdrop-filter: blur(3px);
+}
+.custom-form {
+    background-color: #0000009f;
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+
+.btn-primary{
+    transition: ease 0.3s;
+    }
+.btn-primary:hover{
+    scale: 1.04;
+    transition: ease 0.3s;
+    }
+
+
+.imgContainer{
+    overflow: hidden;
+    width: 200px;
+    height: 300px;
+    transition: ease 0.3s;
+    border-radius: 15px;
+    border: 0px;
+    padding: 0px;
+}
+
+
+.imgContainer img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: ease 0.3s;
+}
+
+.imgContainer:hover img {
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+.imgSelect{
+    box-shadow: 0px 0px 35px 1px rgb(4, 0, 255), 0 6px 20px 0 rgba(255, 0, 255, 0.541);
+    filter: brightness(1.5);
+    transform: scale(1.08);
+    transition: ease 0.3s;
+}
+
+.desc{
+    background-color: #0000009f;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    margin: 10px 0px 10px 0px;
+    border-radius: 15px;
+}
