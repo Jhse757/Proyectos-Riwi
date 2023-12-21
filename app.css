@@ -4,8 +4,8 @@
 }
 
 body{
-    background-image: url('https://i.ibb.co/GtbSbJz/Leonardo-Diffusion-XL-Fantasy-Forest-Landscape-with-Floating-M-3.jpg');
-    background-size:cover;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(104,0,255,1) 50%, rgba(127,0,233,1) 100%);
     justify-content: center;
     margin: 0;
 }
